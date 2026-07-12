@@ -10,11 +10,11 @@ export class Contact {
   constructor(@Inject(HttpClient) private http: HttpClient) {
   }
 
-  query(params: { string: string }) {
-    return this.http.get(this.apiRoot, { params }).toPromise()
+  query(params: { [key: string]: string }) {
+    return this.http.get<Array<any>>(this.apiRoot, { params }).toPromise()
   }
 
-  get(id: string, params?: { string: string }) {
+  get(id: string, params?: {  [key: string]: string }) {
     return this.http.get(this.apiRoot + '/' + id, { params }).toPromise();
   }
 
@@ -31,7 +31,3 @@ export class Contact {
   }
 
 }
-
-angular
-  .module("codecraft")
-  .factory('Contact', downgradeInjectable(Contact))
