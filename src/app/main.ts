@@ -21,11 +21,17 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {UpgradeModule} from '@angular/upgrade/static';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { Contact } from './services/contact.resource';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
-    UpgradeModule
+    UpgradeModule,
+    HttpClientModule
+  ],
+  providers: [
+    Contact
   ]
 })
 export class AppModule {
