@@ -27,7 +27,7 @@ let PersonEditComponent = {
 
       </div>
       <div class="panel-body">
-
+        <h3>form start</h3>
         <ng-include src="'templates/form.html'"></ng-include>
 
       </div>
@@ -48,6 +48,7 @@ let PersonEditComponent = {
             this.$stateParams = $stateParams;
             this.$state = $state;
             this.contacts = ContactService;
+            debugger
             this.person = this.contacts.getPerson(this.$stateParams.email);
         }
 

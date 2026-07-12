@@ -34,6 +34,8 @@ export let PersonListComponent = {
 
     constructor(ContactService) {
       this.contacts = ContactService;
+	  console.log(" this.contacts",  this.contacts);
+	  
     }
   }
 };
