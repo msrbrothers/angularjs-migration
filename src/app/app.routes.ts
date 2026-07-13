@@ -11,7 +11,7 @@ angular
             template: "<person-list></person-list>",
           },
           search: {
-            template: "<person-search></person-search>",
+            template: "<search></search>",
           }
         }
       })

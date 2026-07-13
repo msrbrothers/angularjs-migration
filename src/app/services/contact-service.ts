@@ -13,9 +13,9 @@ export class ContactService {
   private isDeleting = false;
   private selectedPerson = null;
   private persons = [];
-  private search = '';
-  private sorting = 'name';
-  private ordering = 'ASC';
+  public search = '';
+  public sorting = 'name';
+  public ordering = 'ASC';
 
   constructor(
     @Inject(Contact) private contact : Contact,

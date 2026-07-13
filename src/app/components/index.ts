@@ -3,4 +3,4 @@ import "./person-edit.component";
 import "./person-list.component";
 import "./card.component";
 import "./spinner.component";
-import "./person-search.component";
+import "./search.component";
