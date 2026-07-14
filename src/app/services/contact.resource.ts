@@ -1,8 +1,6 @@
-import * as angular from 'angular';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/toPromise';
-import {downgradeInjectable} from '@angular/upgrade/static';
-import { Inject, Injectable } from '@angular/core';
+import { Inject } from '@angular/core';
 
 export class Contact {
   private apiRoot: string = 'http://localhost:3000/contacts';

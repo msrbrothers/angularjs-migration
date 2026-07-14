@@ -27,6 +27,9 @@ import { ContactService } from './services/contact-service';
 import { toasterServiceProvider } from './ajs-upgraded-providers';
 import { SearchComponent } from './components/search.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { DefaultImagePipe } from './pipes/default-image.pipe';
+import { CardComponent } from './components/card.component';
+import { LaddaModule } from 'angular2-ladda';
 
 @NgModule({
   imports: [
@@ -34,7 +37,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     UpgradeModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LaddaModule
   ],
   providers: [
     Contact,
@@ -42,10 +46,13 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     toasterServiceProvider
   ],
   declarations : [
-    SearchComponent
+    SearchComponent,
+    DefaultImagePipe,
+    CardComponent
   ],
   entryComponents:[
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ]
 })
 export class AppModule {
