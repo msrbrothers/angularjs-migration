@@ -31,6 +31,8 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { CardComponent } from './components/card.component';
 import { LaddaModule } from 'angular2-ladda';
 import { SpinnerComponent } from './components/spinner.component';
+import { PersonListComponent } from './components/person-list.component';
+import {InfiniteScrollModule} from 'angular2-infinite-scroll';
 
 @NgModule({
   imports: [
@@ -39,7 +41,8 @@ import { SpinnerComponent } from './components/spinner.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    LaddaModule
+    LaddaModule,
+    InfiniteScrollModule
   ],
   providers: [
     Contact,
@@ -50,12 +53,14 @@ import { SpinnerComponent } from './components/spinner.component';
     SearchComponent,
     DefaultImagePipe,
     CardComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PersonListComponent
   ],
   entryComponents:[
     SearchComponent,
     CardComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PersonListComponent
   ]
 })
 export class AppModule {
