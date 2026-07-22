@@ -33,6 +33,7 @@ import { LaddaModule } from 'angular2-ladda';
 import { SpinnerComponent } from './components/spinner.component';
 import { PersonListComponent } from './components/person-list.component';
 import {InfiniteScrollModule} from 'angular2-infinite-scroll';
+import { PersonCreateComponent } from './components/person-create.component';
 
 @NgModule({
   imports: [
@@ -54,13 +55,15 @@ import {InfiniteScrollModule} from 'angular2-infinite-scroll';
     DefaultImagePipe,
     CardComponent,
     SpinnerComponent,
-    PersonListComponent
+    PersonListComponent,
+    PersonCreateComponent
   ],
   entryComponents:[
     SearchComponent,
     CardComponent,
     SpinnerComponent,
-    PersonListComponent
+    PersonListComponent,
+    PersonCreateComponent
   ]
 })
 export class AppModule {

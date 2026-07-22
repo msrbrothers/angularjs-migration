@@ -16,35 +16,7 @@ import { ContactService } from '../services/contact-service';
 
 @Component({
   selector: 'search',
-  template: `
-<form class="navbar-form navbar-left" [formGroup]="myform">
-
-  <div class="form-group">
-    <input type="text"
-           class="form-control"
-           id="name"
-           placeholder="Search name..."
-           formControlName="search"
-    />
-  </div>
-
-  <div class="form-group">
-    <select class="form-control"
-            formControlName="sorting">
-      <option value="name">Name</option>
-      <option value="email">Email</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <select class="form-control"
-            formControlName="ordering">
-      <option value="ASC">ASC</option>
-      <option value="DESC">DESC</option>
-    </select>
-  </div>
-</form>
-`
+  templateUrl: 'app/components/person-search.html'
 })
 export class SearchComponent {
 
